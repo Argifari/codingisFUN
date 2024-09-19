@@ -334,6 +334,19 @@
     color: rgb(69, 192, 35);
   
   }
+
+  .reveal {
+    position: relative;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: .6s;
+    overflow: hidden;
+  }
+  .reveal.buka {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
   
   /* responsive css */
   @media screen and (max-width:1097px) {
