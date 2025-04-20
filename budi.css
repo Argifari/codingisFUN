@@ -320,7 +320,10 @@
   
   }
   .achievement {
-    margin: 20px 0 20px 0;
+    padding: 100px 0 100px 0;
+    color: white;
+    background-color: rgb(178, 34, 34);
+    margin: 0px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,6 +334,7 @@
     font-size: 50px;
   }
   .achievement-block {
+    margin:10px 0 10px 0 ;
     height: auto;
     width: 100%;
     /* border: 2px solid black; */
@@ -460,7 +464,7 @@
   
   @media screen and (max-width :600px) {
     .achievement-block {
-        flex-direction:column;
+      flex-direction: column;
     }
     #true .true-1 {
       flex-direction: column;
