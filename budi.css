@@ -459,6 +459,9 @@
   }
   
   @media screen and (max-width :600px) {
+    .achievement-block {
+        flex-direction:column;
+    }
     #true .true-1 {
       flex-direction: column;
     }
