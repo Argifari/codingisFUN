@@ -319,7 +319,7 @@
     border-radius: 10px;
   
   }
-  .achievement {
+  #achievement {
     padding: 100px 0 100px 0;
     color: white;
     background-color: rgb(178, 34, 34);
@@ -330,7 +330,7 @@
     flex-direction: column;
 
   }
-  .achievement .achievement-title {
+  #achievement .achievement-title {
     font-size: 50px;
   }
   .achievement-block {
@@ -343,76 +343,21 @@
     align-items: center;
   }
   .achievement-block .achievement-content-1, .achievement-block .achievement-content-2, .achievement-block .achievement-content-3 {
+    background-position: center;
     margin: 4px;
-    height: 200px;
-    width: 200px;
+    height: 285px;
+    width: 400px;
     border-radius:10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 15px;
     /* border: 2px solid black; */
   }
   .achievement-block .achievement-content-1 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     background-image: url(aci1.png);
     background-size:cover;
-  }
-  .achievement-block .achievement-content-1:hover {
-    width: 400px;
-    height: 285px;
-
-  }
-  .achievement-block .achievement-content-2:hover {
-    width: 400px;
-    height: 285px;
-
-  }
-  .achievement-block .achievement-content-3:hover {
-    width: 400px;
-    height: 285px;
-
-  }
-  .achievement-block .achievement-content-1 .achie {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color:rgb(255, 196, 79);
-    transition: 0.5s;
-  }
-  .achievement-block .achievement-content-2 .achie {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color:rgb(255, 196, 79);
-    transition: 0.5s;
-  }
-  .achievement-block .achievement-content-3 .achie {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color:rgb(255, 196, 79);
-    transition: 0.5s;
-  }
-  .achievement-block .achievement-content-1 .achie:hover {
-    background-color:rgb(255, 196, 79, 0);
-    opacity: 0;
-  }
-  .achievement-block .achievement-content-2 .achie:hover {
-    background-color:rgb(255, 196, 79, 0);
-    opacity: 0;
-  }
-  .achievement-block .achievement-content-3 .achie:hover {
-    background-color:rgb(255, 196, 79, 0);
-    opacity: 0;
   }
   .achievement-block .achievement-content-2 {
     background-image: url(aci2.png);
@@ -421,6 +366,31 @@
   .achievement-block .achievement-content-3 {
     background-image: url(aci3.png);
     background-size:cover;
+  }
+  .achievement-block .achievement-content-1 .achie, 
+  .achievement-block .achievement-content-2 .achie,
+  .achievement-block .achievement-content-3 .achie {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(255, 196, 79, 0);
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .achievement-block .achievement-content-1 .achie:hover, 
+  .achievement-block .achievement-content-2 .achie:hover,
+  .achievement-block .achievement-content-3 .achie:hover {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color:rgb(255, 196, 79);
+
   }
   .empty {
     display: flex;
@@ -461,8 +431,8 @@
       width: 50%;
     }
   }
-  
   @media screen and (max-width :600px) {
+    
     .achievement-block {
       flex-direction: column;
     }
