@@ -113,7 +113,7 @@
   .f-2 p {
     text-align: justify;
     font-size: 15px;
-    font-weight: 900;
+    font-weight:lighter;
     line-height: 30px;
     padding-top: 20px;
   }
@@ -260,6 +260,7 @@
   .poem .poem-1.active h1 {
     opacity: 1;
     font-size: 20px;
+    font-weight: lighter;
   }
   
   .poem .poem-1.active {
@@ -282,11 +283,14 @@
     opacity: 0;
     font-size: 2px;
     transition: 0.5s;
+
   }
   
   .poem .poem-2.active h1 {
     opacity: 1;
     font-size: 20px;
+    font-weight: lighter;
+
   }
   
   .poem .poem-2.active {
@@ -311,6 +315,8 @@
   .poem .poem-3.active h1 {
     opacity: 1;
     font-size: 15px;
+    font-weight: lighter;
+
   }
   
   .poem .poem-3.active {
@@ -323,12 +329,10 @@
     padding: 100px 0 100px 0;
     color: white;
     background-color: rgb(178, 34, 34);
-    margin: 0px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
   }
   #achievement .achievement-title {
     font-size: 50px;
@@ -367,6 +371,18 @@
     background-image: url(aci3.png);
     background-size:cover;
   }
+  #organization {
+    padding: 100px 0 100px 0;
+    color: white;
+    /* background-color: rgb(178, 34, 34); */
+    margin: 0px 0 20px 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
   .empty {
     display: flex;
     justify-content: center;
