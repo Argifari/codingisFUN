@@ -26,29 +26,28 @@
   }
   
   .homepage {
-    width: 30%;
+    text-align: center;
+    width: 100%;
+    height: auto;
     /* border: 10px solid red; */
-    font-size: 50px;
+    font-size: 127.88px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
   
   }
   
   .homepage h1 {
     transition: .6s;
-  }
-  
-  .homepage h1.active {
     text-shadow: 5px 5px rgb(178, 34, 34);
   }
   
   .homepage p {
-    margin: 5px 20px;
-    font-size: 30px;
+    font-size: 63.96px;
     opacity: 0.8;
-    font-weight: 100;
+    font-weight: lighter;
     transition: .6s;
   }
   
@@ -60,7 +59,7 @@
   #how {
     font-family: 'Belanosima', sans-serif;
     /* border: 5px solid black; */
-    margin-top: 70px;
+    margin-top: 80px;
     width: 80%;
     margin: 0 auto;
     /* background-color: black; */
@@ -68,7 +67,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 48px;
   }
   
   .feature.f-2 {
@@ -82,7 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 304px;
     width: 200px;
     /* border-right: 20px solid black;*/
     /*border-bottom: 13px solid black;*/
@@ -90,43 +89,43 @@
   }
   
   .feature.f-1 h1 {
-    font-size: 100px;
+    font-size: 127.88px;
     text-shadow: 20px 10px 3px rgb(178, 34, 34);
   
   }
   
   .feature,
   .clock {
-    margin: 20px;
+    margin: 24px;
   }
   
   .f-2 h3 {
-    font-size: 50px;
+    font-size: 63.96px;
   }
   
   .f-2 {
     color: black;
-    margin-top: -30px;
-    padding: 20px;
+    margin-top: -32px;
+    padding: 24px;
   }
   
   .f-2 p {
     text-align: justify;
-    font-size: 15px;
+    font-size: 16px;
     font-weight:lighter;
-    line-height: 30px;
-    padding-top: 20px;
+    line-height: 32px;
+    padding-top: 24px;
   }
   
   #true {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 32px;
     font-size: 30px;
     flex-wrap: wrap;
     height: auto;
-    margin-top: 150px;
+    margin-top: 152px;
     background-color: rgb(255, 196, 79);
   }
   
@@ -138,24 +137,28 @@
     width: 100%;
     height: auto;
     /* text-align: center; */
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
   #true .true-1 h1 {
-    font-size: 2em;
+    font-size: 63.96px;
+    
+  }
+  #true h1 {
+    font-size: 45.23px;
   }
   .clock {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
-    margin: 20px 0 20px 0;
+    width: 312px;
+    height: 312px;
+    margin: 24px 0 24px 0;
     /* background-color: red; */
   }
   
   .clock .time {
     position: absolute;
-    line-height: 10px;
+    line-height: 8px;
     display: flex;
     justify-content: center;
     color: wheat;
@@ -173,16 +176,16 @@
   }
   
   .clock .time.min {
-    width: 198px;
-    height: 198px;
+    width: 192px;
+    height: 192px;
     border-radius: 50%;
     border: 4px solid rgb(178, 34, 34);
     z-index: 1;
   }
   
   .clock .time.hr {
-    width: 98px;
-    height: 98px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     border: 4px solid black;
     z-index: 2;
@@ -190,7 +193,7 @@
   
   .clock .time.sec::before {
     content: "";
-    width: 17px;
+    width: 16px;
     height: 24px;
     background-color: #39074E;
     position: absolute;
@@ -201,8 +204,8 @@
   
   .clock .time.min::before {
     content: "";
-    width: 17px;
-    height: 49px;
+    width: 16px;
+    height: 48px;
     background-color: rgb(178, 34, 34);
     position: absolute;
     left: 50%;
@@ -212,8 +215,8 @@
   
   .clock .time.hr::before {
     content: "";
-    width: 17px;
-    height: 46px;
+    width: 16px;
+    height: 48px;
     background-color: black;
     position: absolute;
     left: 50%;
@@ -222,7 +225,7 @@
   }
   
   .poem {
-    margin-top: 10px;
+    margin-top: 8px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -233,12 +236,11 @@
   .poem .poem-1,
   .poem .poem-2,
   .poem .poem-3 {
-    margin: 50px;
+    margin: 48px;
     color: black;
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 48px;
     border-radius: 50%;
-    font-size: .6em;
     transition: .6s;
     overflow: hidden;
     display: flex;
@@ -259,7 +261,7 @@
   
   .poem .poem-1.active h1 {
     opacity: 1;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
   }
   
@@ -288,7 +290,7 @@
   
   .poem .poem-2.active h1 {
     opacity: 1;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
 
   }
@@ -314,7 +316,7 @@
   
   .poem .poem-3.active h1 {
     opacity: 1;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: lighter;
 
   }
@@ -326,7 +328,8 @@
   
   }
   #achievement {
-    padding: 100px 0 100px 0;
+    font-size: 45.23px;
+    padding: 104px 0 104px 0;
     color: white;
     background-color: rgb(178, 34, 34);
     display: flex;
@@ -338,7 +341,7 @@
     font-size: 50px;
   }
   .achievement-block {
-    margin:10px 0 10px 0 ;
+    margin:8px 0 8px 0 ;
     height: auto;
     width: 100%;
     /* border: 2px solid black; */
@@ -348,8 +351,8 @@
   }
   .achievement-block .achievement-content-1, .achievement-block .achievement-content-2, .achievement-block .achievement-content-3 {
     background-position: center;
-    margin: 4px;
-    height: 285px;
+    margin: 8px;
+    height: 280px;
     width: 400px;
     border-radius:10%;
     display: flex;
@@ -372,10 +375,10 @@
     background-size:cover;
   }
   #organization {
-    padding: 100px 0 100px 0;
+    padding: 104px 0 104px 0;
     color: white;
     /* background-color: rgb(178, 34, 34); */
-    margin: 0px 0 20px 0;
+    margin: 0px 0 24px 0;
     border: 2px solid black;
     display: flex;
     justify-content: center;
@@ -392,12 +395,12 @@
   
   .kosong {
     display: flex;
-    height: 100px ;
-    width: 100px;
+    height: 104px ;
+    width: 104px;
     /* border:10px solid black; */
     align-items: center;
     justify-content: center;
-    margin: 100px 0px;
+    margin: 104px 0px;
     font-size: 50px;
     color: rgb(69, 192, 35);
   
@@ -418,8 +421,12 @@
   
   /* responsive css */
   @media screen and (max-width:1097px) {
-    .homepage {
-      width: 50%;
+    .homepage h1 {
+      font-size: 90.44px;
+      
+    }
+    .homepage p {
+      font-size: 45.23px;
     }
   }
   @media screen and (max-width :600px) {
@@ -431,7 +438,7 @@
       flex-direction: column;
     }
     #story {
-      padding: 10px;
+      padding: 8px;
     }
   
     .poem {
@@ -445,17 +452,19 @@
     .f-2 h3 {
       font-size: 43px;
     }
-  
+    .homepage h1 {
+      font-size:90.44px ;
+    }
     .homepage p {
-      font-size: 30px;
+      font-size: 45.23px;
     }
   
     .clock h1 {
-      font-size: 50px;
+      font-size: 63.96px;
     }
   
     .clock {
-      padding: 60px;
+      padding: 64px;
       width: 100%;
     }
   
